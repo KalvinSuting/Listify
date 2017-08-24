@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.donny.listify.MainActivity">
+    <item
+        android:id="@+id/toggle_delete"
+        android:orderInCategory="100"
+        android:title="Toggle delete"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reset"
+        android:orderInCategory="110"
+        android:title="Reset"
+        app:showAsAction="never" />
+
+</menu>

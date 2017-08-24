@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.donny.listify.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ListView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:visibility="visible">
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="75dp"
+                android:layout_height="50dp"
+                android:onClick="save"
+                android:text="Save"
+                android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/button4"
+                android:layout_toStartOf="@+id/button4"
+                android:layout_above="@+id/delete0" />
+
+            <Button
+                android:id="@+id/delete9"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/count8"
+                android:layout_toEndOf="@+id/count8"
+                android:layout_toRightOf="@+id/count8"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete8"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/count7"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete7"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/count6"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete6"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/count5"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete5"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/count4"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete4"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/count3"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete3"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/count2"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete2"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/delete3"
+                android:layout_alignStart="@+id/delete3"
+                android:layout_below="@+id/delete1"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete1"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/delete0"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/delete0"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/count1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/count0"
+                android:onClick="delete"
+                android:text="delete"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="63dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/delete0"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/button3"
+                android:onClick="plus"
+                android:text="+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            <EditText
+                android:id="@+id/count0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Header"
+                android:layout_toLeftOf="@+id/delete0"
+                android:layout_toStartOf="@+id/delete0"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count0"
+                android:layout_toLeftOf="@+id/delete2"
+                android:layout_toStartOf="@+id/delete2"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count1"
+                android:layout_toLeftOf="@+id/delete3"
+                android:layout_toStartOf="@+id/delete3"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count2"
+                android:layout_toLeftOf="@+id/delete3"
+                android:layout_toStartOf="@+id/delete3"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count3"
+                android:layout_toLeftOf="@+id/delete4"
+                android:layout_toStartOf="@+id/delete4"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count4"
+                android:layout_toLeftOf="@+id/delete5"
+                android:layout_toStartOf="@+id/delete5"
+                android:clickable="true"
+                android:gravity="center|left"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count5"
+                android:layout_toLeftOf="@+id/delete6"
+                android:layout_toStartOf="@+id/delete6"
+                android:clickable="true"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count6"
+                android:layout_toLeftOf="@+id/delete7"
+                android:layout_toStartOf="@+id/delete7"
+                android:clickable="true"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count7"
+                android:layout_toLeftOf="@+id/delete8"
+                android:layout_toStartOf="@+id/delete8"
+                android:clickable="true"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/count9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/delete9"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/count8"
+                android:layout_toLeftOf="@+id/delete9"
+                android:layout_toStartOf="@+id/delete9"
+                android:clickable="true"
+                android:inputType="textPersonName"
+                android:visibility="invisible" />
+
+            <EditText
+                android:id="@+id/Header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textBoxes"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:hint="Enter Name "
+                android:inputType="textPersonName"
+                android:visibility="visible"
+                tools:text="My List " />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
